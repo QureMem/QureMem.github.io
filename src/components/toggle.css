@@ -1,0 +1,64 @@
+.toggle {
+  display: inline-block;
+  position: relative;
+  height: 42px;
+  width: 120px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 2px solid #34495e;
+}
+.toggleGroup {
+  position: absolute;
+  width: 200%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: left 0.35s;
+}
+.toggle.off .toggleGroup {
+  left: -100%;
+}
+.btn {
+  background-color: #27ae60;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggleOn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  margin: 0;
+  border: 0;
+  padding-right: 20px;
+}
+.toggleOff {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding-left: 24px;
+}
+
+.toggleHandle {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: calc(100% - 4px);
+  width: 40px;
+  border-width: 0 1px;
+  border-radius: 10%;
+  background-color: #ecf0f1;
+}
