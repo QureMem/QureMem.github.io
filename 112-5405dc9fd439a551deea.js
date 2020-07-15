@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[112],{"+TI9":function(a){a.exports=JSON.parse('{"nameEn":"Time","nameTr":"al-\'Asr","nameAr":"الـعصر","noVerses":3,"verses":[["وَالْعَصْرِ","Thumma latus alunna yauma-izin \'anin na\'eem"],["إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ","Wal\' asr"],["إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ","Innal insaana lafee khusr"]]}')}}]);
+//# sourceMappingURL=112-5405dc9fd439a551deea.js.map
