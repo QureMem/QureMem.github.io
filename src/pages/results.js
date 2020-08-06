@@ -23,15 +23,14 @@ const Results = ({ location }) => {
         <h1>Results</h1>
 
         {location.state?.results.map((e, idx) => {
-          let corrector = diff.diffChars(
+          let sur =
             location.state?.surah.verses[idx + location.state?.start - 1][
               location.state?.transcript
-            ],
-            location.state?.results[idx],
-            {
-              ignoreCase: true,
-            }
-          )
+            ]
+
+          let corrector = diff.diffChars(sur, location.state?.results[idx], {
+            ignoreCase: true,
+          })
           return (
             <div className="row" key={idx}>
               <Row

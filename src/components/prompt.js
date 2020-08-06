@@ -20,25 +20,32 @@ const Prompt = ({
     if (transcript) {
       ret = txt.toLowerCase()
     } else {
-      ret = txt.replace(
-        /([^\u0621-\u063A\u0641-\u064A\u0660-\u0669a-zA-Z 0-9])/g,
-        ""
-      )
+      ret = txt
+        .replace(" ۖ", "")
+        .replace(/([^\u0621-\u063A\u0641-\u064A\u0660-\u0669a-zA-Z 0-9])/g, "")
     }
-    return ret.trim()
+    return ret
   }
   const hasDiacritics = txt => {
     return (
-      txt.replace(/([^\u0621-\u063A\u0641-\u064A\u0660-\u0669a-zA-Z 0-9])/g, "")
+      txt
+        .replace(" ۖ", "")
+        .replace(/([^\u0621-\u063A\u0641-\u064A\u0660-\u0669a-zA-Z 0-9])/g, "")
         .length != txt.length
     )
   }
   const validator = e => {
     let val = e.target.value
+    let pval = preprocess(val)
     if (
-      preprocess(val) !==
-      preprocess(surah.verses[currAya][transcript]).slice(0, val.length)
+      pval !==
+      preprocess(surah.verses[currAya][transcript]).slice(0, pval.length)
     ) {
+      console.log(pval)
+      console.log(
+        preprocess(surah.verses[currAya][transcript]).slice(0, pval.length)
+      )
+
       setCorrect(false)
       setMainField(val)
     } else {
