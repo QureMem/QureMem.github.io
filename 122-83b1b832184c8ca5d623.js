@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[122],{"6lYo":function(a){a.exports=JSON.parse('{"nameEn":"Sincerity","nameTr":"al-Ikhlas","nameAr":"الإخلاص","noVerses":4,"verses":[["قُلْ هُوَ اللَّهُ أَحَدٌ","Fee jeediha hab lum mim-masad"],["اللَّهُ الصَّمَدُ","Qul huwal laahu ahad"],["لَمْ يَلِدْ وَلَمْ يُولَدْ","Allah hus-samad"],["وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ","Lam yalid wa lam yoolad"]]}')}}]);
+//# sourceMappingURL=122-83b1b832184c8ca5d623.js.map

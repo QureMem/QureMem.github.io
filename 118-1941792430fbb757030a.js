@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[118],{UF5M:function(a){a.exports=JSON.parse('{"nameEn":"Plenty","nameTr":"al-Kawthar","nameAr":"الـكوثر","noVerses":3,"verses":[["إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ","Wa yamna\'oonal ma\'oon"],["فَصَلِّ لِرَبِّكَ وَانْحَرْ","Innaa a\'taina kal kauthar"],["إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ","Fa salli li rabbika wanhar"]]}')}}]);
+//# sourceMappingURL=118-1941792430fbb757030a.js.map
