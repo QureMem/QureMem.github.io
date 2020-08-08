@@ -1,7 +1,7 @@
 # QureMem
 
 QureMem is a web-app that helps you memorize the Quran.
-Link: [Click here!]()
+Link: [Click here!](https://quremem.github.io/)
 
 # Ressources
 
