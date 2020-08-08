@@ -33,7 +33,7 @@ const Row = ({ corrector, ayah, transcript, answer }) => {
         })}
       </div>
       {active ? (
-        <div onClick={() => setActive(active => !active)}>
+        <div /* onClick={() => setActive(active => !active)} */>
           <h4>Ayah:</h4>
           <p style={{ textAlign: "center" }}>{ayah}</p>
           <h4>You answer:</h4>

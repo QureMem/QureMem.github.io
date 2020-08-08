@@ -15,24 +15,25 @@ const Prompt = ({
   const [correct, setCorrect] = useState(true)
   const [results, setResults] = useState([])
   const inputRef = useRef(null)
+  const arabicFixes = txt =>
+    txt
+      .replace(/ۗ/g, "")
+      .replace(/ ۚ/g, "")
+      .replace(/ ۖ/g, "")
+      .replace(/([^\u0621-\u063A\u0641-\u064A\u0660-\u0669a-zA-Z 0-9])/g, "")
+      .replace(/  /g, " ")
+
   const preprocess = txt => {
     let ret
     if (transcript) {
       ret = txt.toLowerCase()
     } else {
-      ret = txt
-        .replace(" ۖ", "")
-        .replace(/([^\u0621-\u063A\u0641-\u064A\u0660-\u0669a-zA-Z 0-9])/g, "")
+      ret = arabicFixes(txt)
     }
     return ret
   }
   const hasDiacritics = txt => {
-    return (
-      txt
-        .replace(" ۖ", "")
-        .replace(/([^\u0621-\u063A\u0641-\u064A\u0660-\u0669a-zA-Z 0-9])/g, "")
-        .length != txt.length
-    )
+    return arabicFixes(txt).length != txt.length
   }
   const validator = e => {
     let val = e.target.value
